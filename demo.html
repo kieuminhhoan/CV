@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, th, td {
+        /* đường viền bảng màu đen dày 1px */
+    border: 1px solid black;
+}
+/* tạo viền mảnh cho bảng(các đường viền trong bảng gọp lại thành 1 đường duy nhất) */
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+/* căn chỉnh chiều dài của bảng là 100% */
+table {
+    width: 100%;
+}
+/* chiều dài của phần tử th là 50px và nội dung thẻ th được căn lề trái */
+th {
+    height: 50px;
+    text-align: left;
+}
+/* nội dung trong thẻ td được căn theo chiều dọc và được căn xuống dưới */
+td {
+    height: 50px;
+    vertical-align: bottom;
+}
+/* dùng để điều khiển khoảng cách giữa nội dung và các đường viền trong bảng */
+th, td {
+    padding: 15px;
+}
+
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+</style>
+<body>
+    <h2>Thêm đường viền cho bảng:</h2>
+
+<table>
+  <tr>
+    <th>Họ đệm</th>
+    <th>Tên</th>
+  </tr>
+  <tr>
+    <td>Nguyễn Khắc</td>
+    <td>Nhật</td>
+  </tr>
+  <tr>
+    <td>Nguyễn Thị</td>
+    <td>Phương</td>
+  </tr>
+</table>
+</body>
+</html>
