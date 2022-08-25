@@ -1,0 +1,48 @@
+/* kiểu đánh dấu đổi thành hình tròn */
+ul.a {
+    list-style-type: circle; 
+}
+/* kiểu đánh dấu đổi thành hình vuông */
+ul.b {
+    list-style-type: square;
+}
+/* kiểu đánh dấu đổi thành chữ số la mã */
+ol.c {
+    list-style-type: upper-roman;
+}
+/* kiểu đánh dấu đổi thành chữ cái theo bảng chữ cái */
+ol.d {
+    list-style-type: lower-alpha;
+}
+/* dùng 1 hình ảnh để đánh dấu các mục trong danh sách */
+ul {
+    list-style-image: url('http://agilearn.vn/draftfile.php/263/user/draft/510120718/bullet_red%20_2.png');
+}
+/* ác định nơi sẽ đánh dấu các mục của danh sách sẽ xuất hiện bên trong hoặc bên ngoài dòng nội dung */
+ul.a {list-style-position:inside;}
+ul.b {list-style-position:outside;}
+/* Sử dụng để đặt tất cả các thuộc tính của danh sách trong một mô tả (declaration) */
+ul {
+    list-style: square inside url("http://agilearn.vn/draftfile.php/263/user/draft/510120718/bullet_red%20_2.png");
+}
+/* định dạng màu sắc cho các thẻ */
+ol {
+    background: #ff9999;
+    padding: 20px;
+}
+
+ul {
+    background: #3399ff;
+    padding: 20px;
+}
+
+ol li {
+    background: #ffe5e5;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+ul li {
+    background: #cce5ff;
+    margin: 5px;
+}
