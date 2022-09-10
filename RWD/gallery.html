@@ -10,42 +10,52 @@
     *{
         box-sizing: border-box;
     }
-    header {
-        width: 100%;
-        height: 100px;
-    }
     div {
-        display: block;
+        border: 1px solid black;
+        width: 22%;
+        float: left;
+        margin: 1%;
     }
-   .img {
-    float: left;
-    width: 25%;
-   }
-   @media  and (max-width : 700px) {
-        
-   }
-
+    div:hover {
+        border: 1px solid red;
+    }
+    img {
+        width: 100%;
+    }
+    footer {
+        clear: both;
+    }
+    @media  screen and (max-width: 700px) {
+        div {
+            width: 48%;
+            float: :left;
+            margin: 1%;
+        }
+    }
+    @media  screen and (max-width: 500px) {
+        div {
+            width: 100%;
+        }
+    }
 </style>
 <body>
-    <div class="header">
         <h1>Responsive Image Gallery</h1>
 
         <h3>Resize the browser window to see the effect.</h3>
-    </div>
-    <div class="img">
-        <img src="../img/doraemon.jpeg" alt="" width="400px" height="200px">
+    <div>
+        <img src="../img/img1.jpeg" alt="">
         <p>Add a description of the image here</p>
     </div>
-    <div class="img">
-        <img src="../img/doraemon.jpeg" alt="" width="400px" height="200px">
+    <div>
+        <img src="../img/img2.jpeg" alt="">
         <p>Add a description of the image here</p>
     </div>
-    <div class="img">
-        <img src="../img/doraemon.jpeg" alt="" width="400px" height="200px">
+    <div>
+        <img src="../img/img3.jpeg" alt="">
         <p>Add a description of the image here</p>
     </div>
-    <div class="img">
-        <img src="../img/doraemon.jpeg" alt="" width="400px" height="200px">
+    <div>
+        <img src="../img/img4.jpeg" alt="">
         <p>Add a description of the image here</p>
     </div>
     <footer>
