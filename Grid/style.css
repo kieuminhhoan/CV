@@ -1,0 +1,52 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+.container {
+    width: 70%;
+    height: 80%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(221, 134, 28);
+    /* grid */
+    display: grid;
+    grid-template-columns: 10% 80% 10%     ;
+    grid-template-rows: 1fr 1fr 4fr  1fr ;
+    grid-template-areas: 
+    "header header header"
+    "nav-menu nav-menu nav-menu"
+    "left main right"
+    "footer footer footer"
+    ;
+}
+.header {
+    background-color: aqua;
+    grid-area: header;
+}
+.nav-menu {
+    background-color: aquamarine;
+    grid-area: nav-menu;
+}
+.left-content {
+    background-color: blue;
+    grid-area: left;
+}
+.main-content {
+    background-color: blueviolet;
+    grid-area: main;
+}
+.right-content {
+    background-color: brown;
+    grid-area: right;
+}
+.footer {
+    background-color: chocolate;
+    grid-area: footer;
+}
